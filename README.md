@@ -2,6 +2,8 @@
 
 **Public open-source field · Nexus mesh-native AI lineage**
 
+[![ci](https://github.com/digitaldesignerjazz/Aether/actions/workflows/ci.yml/badge.svg)](https://github.com/digitaldesignerjazz/Aether/actions/workflows/ci.yml)
+
 Aether is the dedicated public repository for open-source development of the Aether field — protocols, specs, contribution surfaces and public agent-skill excerpts that may live in the open.
 
 This is a **medium**, not a private swarm dump.
@@ -41,7 +43,17 @@ See [docs/PUBLIC_BOUNDARY.md](docs/PUBLIC_BOUNDARY.md).
 | Swarm roles | Lumia / Elara · Lyra · Xen · Elysium |
 | Chain / runes | Proposed specs only until a public spec says otherwise |
 
-Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) · [docs/VISION.md](docs/VISION.md)
+Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) · [docs/VISION.md](docs/VISION.md) · [docs/CI.md](docs/CI.md)
+
+---
+
+## CI
+
+Public field hygiene runs on GitHub-hosted `ubuntu-latest`. No repository secrets. Self-hosted Hannover runners stay off this field.
+
+```bash
+./scripts/ci-field-hygiene.sh
+```
 
 ---
 
