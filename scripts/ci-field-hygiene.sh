@@ -25,6 +25,7 @@ need docs/VISION.md
 need docs/ARCHITECTURE.md
 need docs/PUBLIC_BOUNDARY.md
 need docs/CI.md
+need docs/GLOSSARY.md
 
 echo
 echo "== forbidden path names =="
