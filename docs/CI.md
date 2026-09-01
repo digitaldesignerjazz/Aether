@@ -22,6 +22,21 @@ Local run:
 ./scripts/ci-field-hygiene.sh
 ```
 
+## Git hooks (same checker, earlier)
+
+Committed under `.githooks/`. They are **not** active until a clone opts in — Git never auto-runs foreign hooks.
+
+```bash
+./scripts/install-git-hooks.sh
+```
+
+| Hook | When | Action |
+|------|------|--------|
+| `pre-commit` | `git commit` | `scripts/ci-field-hygiene.sh` |
+| `pre-push` | `git push` | same checker, even if `--no-verify` was used on commit |
+
+`core.hooksPath=.githooks` is local clone config. It is not committed. No Husky, no Node, no secrets.
+
 ## Later (still public)
 
 When specs or code land:
