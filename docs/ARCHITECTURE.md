@@ -16,6 +16,8 @@ This is a map of **public** layers. It is not a deployment runbook.
 
 ## Swarm roles (public)
 
+Canonical vocabulary: [GLOSSARY.md](GLOSSARY.md) (`lumia-elara`, `lyra`, `xen`, `elysium`).
+
 | Role | Public function |
 |------|-----------------|
 | Lumia / Elara | Devoted intelligence and personal orchestration |
