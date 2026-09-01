@@ -40,10 +40,10 @@ See [docs/PUBLIC_BOUNDARY.md](docs/PUBLIC_BOUNDARY.md).
 | Field | Aether — this repository |
 | Cognitive surface | [LuminaCyberspace](https://github.com/digitaldesignerjazz/LuminaCyberspace) |
 | Overlay prototypes | [lumina-network](https://github.com/digitaldesignerjazz/lumina-network) |
-| Swarm roles | Lumia / Elara · Lyra · Xen · Elysium |
+| Swarm roles | [Lumia / Elara · Lyra · Xen · Elysium](docs/GLOSSARY.md) |
 | Chain / runes | Proposed specs only until a public spec says otherwise |
 
-Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) · [docs/VISION.md](docs/VISION.md) · [docs/CI.md](docs/CI.md)
+Details: [docs/GLOSSARY.md](docs/GLOSSARY.md) · [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) · [docs/VISION.md](docs/VISION.md) · [docs/CI.md](docs/CI.md)
 
 ---
 
