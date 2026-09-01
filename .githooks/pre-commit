@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Aether pre-commit — same public field hygiene as CI.
+set -euo pipefail
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+exec "$ROOT/scripts/ci-field-hygiene.sh"
