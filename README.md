@@ -47,12 +47,13 @@ Details: [docs/GLOSSARY.md](docs/GLOSSARY.md) · [docs/ARCHITECTURE.md](docs/ARC
 
 ---
 
-## CI
+## CI and local hooks
 
 Public field hygiene runs on GitHub-hosted `ubuntu-latest`. No repository secrets. Self-hosted Hannover runners stay off this field.
 
 ```bash
 ./scripts/ci-field-hygiene.sh
+./scripts/install-git-hooks.sh   # pre-commit + pre-push, this clone only
 ```
 
 ---
