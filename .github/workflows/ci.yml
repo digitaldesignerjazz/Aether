@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  field-hygiene:
+    name: field-hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Make checker executable
+        run: chmod +x scripts/ci-field-hygiene.sh
+
+      - name: Public field hygiene
+        run: ./scripts/ci-field-hygiene.sh
+
+      - name: Runner note
+        run: |
+          echo "Aether CI runs on GitHub-hosted ubuntu-latest."
+          echo "Self-hosted Hannover / Cyberspace runners stay off this public field."
+          echo "No repository secrets are required for this job."
