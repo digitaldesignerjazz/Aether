@@ -1,0 +1,12 @@
+# Local / private — never publish
+*.pem
+*.key
+*.env
+.env.*
+!.env.example
+*secret*
+*wallet*
+skilllogin*
+*_state.md
+artifacts/
+.DS_Store
