@@ -9,6 +9,13 @@ Aether is public. Assume every issue, comment and commit is readable by stranger
 1. Read [docs/PUBLIC_BOUNDARY.md](docs/PUBLIC_BOUNDARY.md).
 2. Read [docs/VISION.md](docs/VISION.md).
 3. Open an issue for anything larger than a typo.
+4. Install the local hooks so field hygiene runs before commit and push:
+
+```bash
+./scripts/install-git-hooks.sh
+```
+
+That sets `core.hooksPath` to `.githooks/` for this clone only. The same checker as CI (`scripts/ci-field-hygiene.sh`) then blocks a dirty public field.
 
 ## How to work
 
