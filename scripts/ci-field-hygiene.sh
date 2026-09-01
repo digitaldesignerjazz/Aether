@@ -29,12 +29,16 @@ need docs/GLOSSARY.md
 
 echo
 echo "== forbidden path names =="
-if find . -path ./.git -prune -o \(
-    -iname '*skilllogin*' -o -iname '*_state.md' -o -iname '*.pem' -o -iname '*.key' -o -iname '.env' -o -iname '.env.*' \) -print | grep -v './.env.example' | grep -q .
-then
+forbidden=$(find . \
+  -path ./.git -prune -o \
+  \( -iname '*skilllogin*' -o -iname '*_state.md' -o -iname '*.pem' \
+     -o -iname '*.key' -o -iname '.env' -o -iname '.env.*' \) \
+  -print \
+  | grep -v './.env.example' \
+  || true)
+if [[ -n "$forbidden" ]]; then
   echo "FORBIDDEN path present"
-  find . -path ./.git -prune -o \(
-      -iname '*skilllogin*' -o -iname '*_state.md' -o -iname '*.pem' -o -iname '*.key' -o -iname '.env' -o -iname '.env.*' \) -print
+  echo "$forbidden"
   fail=1
 else
   echo "OK      no private-looking filenames"
